@@ -12,7 +12,7 @@
 pliki=`cat $2`
 for plik in $pliki
 do
-    if [ ! -e $plik ]
+    if [ ! -e $1/$plik ]
     then
         touch $1/$plik
     fi

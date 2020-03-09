@@ -8,11 +8,9 @@
 # do których my (nasz skrypt) mamy prawo zapisu, 
 # przez dopisanie dodatkowego członu ".old".
 
-katalog=$1
-
-for plik in $katalog/*
+for plik in `ls $1`
 do
-    if [ -w $plik ]
+    if [ -w $1/$plik ]
     then
         mv $plik $plik.old
     fi

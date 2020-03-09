@@ -14,8 +14,5 @@ katalog2=$2
 
 for plik in $katalog1/*
 do
-    if [ -e $plik ]
-    then
         mv $plik $katalog2
-    fi
 done

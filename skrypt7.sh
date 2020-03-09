@@ -9,13 +9,11 @@
 # utworzyć w D plik regularny o nazwie P, które będzie
 # zawierał listę usuniętych plików.
 
-files=`ls $1`
 deleted=$2
-
 touch $deleted
-for file in $files
+for file in `ls $1`
 do
-    if [[ ! -s $file ]]
+    if [[ ! -s $1/$file ]]
     then
         echo "Usuwam plik: $file" >> $deleted
         rm $file

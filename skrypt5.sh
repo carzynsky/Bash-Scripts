@@ -10,11 +10,9 @@
 # jest nieistotna. W Wydruku treść każdego pliku powinna być 
 # poprzedzona nagłówkiem z jego nazwą.
 
-katalog=$1
-pliki=`ls $katalog`
-for plik in $pliki
+for plik in `ls $1`
 do
-    if [ -w $plik ]
+    if [ -w $1/$file ]
     then
         echo $plik
         cat $plik

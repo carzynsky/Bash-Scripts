@@ -8,17 +8,17 @@
 # poza tymi do których my (nasz skrypt) mamy prawo wykonania. 
 # Uwaga! Katalogi też mogą mieć prawo wykonania!
 
-for plik in $1/*
+for plik in `ls $1`
 do
-    if [ ! -f $plik/* ]
+    if [ ! -f $1/$plik/* ]
     then
-        if [ -d $plik -a -e $plik ]
+        if [ -d $1/$plik -a -e $1/$plik ]
         then 
-            rmdir $plik
+            rmdir $1/$plik
 
-        elif [ -e $plik ]
+        elif [ -e $1/$plik ]
         then
-            rm $plik
+            rm $1/$plik
         fi
     fi
 done
