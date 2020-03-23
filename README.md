@@ -1,7 +1,7 @@
 # Bash-Scripts
 Bash scripts written for Operating Systems 2 classes at Wroclaw University of Science. Made on Linux.
 ## Access permissions
-> Firstly you might add standard execution rights for user to each script
+> Firstly you might add standard execute rights for user to each script
 ```bash
 chmod u+x ./skrypt.sh
 ```
