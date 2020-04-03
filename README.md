@@ -24,3 +24,11 @@ chmod u+x ./skrypt.sh
     - c) nie usuwaj żadnych plików wykonywalnych
     - d) przeprowadź usuwanie także w podkatalogach, 
   istniejących w obydwu katalogach roboczych 
+- **skrypt22.sh**
+  - Napisz skrypt, który dla wszystkich plików wykonywalnych z jakiegoś katalogu (parametr wywołania skryptu) utworzy dowiązania twarde w drugim katalogu (parametr wywołania skryptu), zaś dla podkatalogów utworzy on dowiązania miękkie
+- **skrypt32.sh**
+  - Napisz skrypt, który dla wszystkich plików wykonywalnych z jakiegoś katalogu (parametr wywołania skryptu) utworzy dowiązania twarde w drugim katalogu (parametr wywołania skryptu), zaś dla podkatalogów utworzy on dowiązania miękkie. Dodatkowo:
+    - a) skontroluj liczbę argumentów i uprawnienia do odpowiednich elementów systemu plików,
+    - b) nie twórz nowego dowiązania, jeżeli w drugim katalogu istnieje już dowiązanie twarde (wcześniej zakładaliśmy, że na pewno nie istnieje)
+    - c) zadbaj o to, żeby dowiązania symboliczne byłī stworzone względem katalogu roboczego (pwd)
+    - d) w przypadku podkatalogów pierwszego danego katalogu, utwórz odpowiednie dowiązania do plików z tych podkatalogów w drugim danym katalogu (załóż, że nazwy plików są unikalne)
